@@ -1,0 +1,21 @@
+$fontColor: rgb(49, 47, 47);
+@mixin flex($jc, $dir) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+    justify-content: $jc;
+}
+@mixin ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+ 
+}
+@mixin hover {
+    transition: all .5s ease-in-out ;
+    cursor: pointer;
+    &:hover {
+        opacity: .5;
+    }
+}
+

@@ -1,0 +1,46 @@
+@import './main.scss';
+.footer {
+    width: 100vw;
+    height: 35vh;
+    background-color: $fontColor;
+    margin-top: 20vh;
+    @include flex(flex-start, column);
+    color:  white;
+    h2 {
+        font-size: 3.5em;
+        margin: 2vh 0 1.5vh 0;
+    }
+    h4 {
+        margin-top: 0;
+        font-size: 2em;
+        margin-bottom: 3vh;
+    }
+    span {
+        color: silver;
+    }
+    .inputContainer {
+        width: 50%;
+        height: 10vh;
+        @include flex(center, row);
+        input {
+            width: 60%;
+            height: 100%;
+            border-radius: 10px;
+            border: none;
+            text-indent: 20px;
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            height: 100%;
+            padding: 0 20px;
+            border-radius: 5px;
+            border: none;
+            @include hover();
+            font-size: 1.2em;
+            margin-left: 2px;
+            color: $fontColor;
+        }
+    }
+}

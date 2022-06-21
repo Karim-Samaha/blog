@@ -1,0 +1,23 @@
+@import './main.scss';
+
+.header {
+    width: 100vw;
+    height: 70vh;
+    margin-top: 20vh;
+    position: relative;
+    .text {
+        position: absolute;
+        width: 20vw;
+        top: -13%;
+        left: 40%;
+        @include flex(space-around, column);
+        color: $fontColor;
+        h1 {
+            font-size: 5em;
+            margin: 0;
+        }
+        h3 {
+            margin: 0;
+        }
+    }
+}
